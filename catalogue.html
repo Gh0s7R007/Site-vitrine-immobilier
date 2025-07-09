@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Borcelle Immobilier</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalogue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Borcelle Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html" class="active">Catalogue</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="catalogue-container">
+            <section class="filters-section" id="filters-section">
+                <div class="container">
+                    <h2>Recherchez votre bien idéal</h2>
+
+                    <div class="filters-grid">
+                        <div class="filter-group">
+                            <label for="property-type"><i class="fas fa-home"></i> Type</label>
+                            <select id="property-type">
+                                <option value="all">Tous types</option>
+                                <option value="house">Maison</option>
+                                <option value="apartment">Appartement</option>
+                                <option value="villa">Villa</option>
+                                <option value="loft">Loft</option>
+                                <option value="castle">Château</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="price-min"><i class="fas fa-euro-sign"></i> Budget</label>
+                            <div class="price-range">
+                                <input type="number" id="price-min" placeholder="Min" min="0">
+                                <span>à</span>
+                                <input type="number" id="price-max" placeholder="Max">
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="location"><i class="fas fa-map-marker-alt"></i> Ville</label>
+                            <select id="location">
+                                <option value="all">Toutes villes</option>
+                                <option value="paris">Paris</option>
+                                <option value="lyon">Lyon</option>
+                                <option value="marseille">Marseille</option>
+                                <option value="bordeaux">Bordeaux</option>
+                                <option value="nice">Nice</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="bedrooms"><i class="fas fa-bed"></i> Chambres</label>
+                            <select id="bedrooms">
+                                <option value="all">Toutes</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn filter-btn" id="filter-btn">
+                            <i class="fas fa-search"></i> Appliquer
+                        </button>
+                        <button class="btn filter-btn" id="reset-btn">
+                            <i class="fas fa-redo"></i> Réinitialiser
+                        </button>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="properties-section">
+                <div class="container">
+                    <div class="results-info" id="results-info"></div>
+                    <div class="properties-grid" id="properties-container"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo.png" alt="Borcelle Logo" class="footer-logo">
+                <p>Votre partenaire immobilier de confiance depuis 1998.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 12 Avenue des Champs, 75008 Paris</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@borcelle.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Borcelle. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/catalogue.js"></script>
+</body>
+</html>

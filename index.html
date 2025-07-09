@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borcelle - Agence Immobilière d'Excellence</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Borcelle Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Votre rêve immobilier devient réalité</h1>
+                <p>Borcelle vous accompagne dans tous vos projets immobiliers avec expertise et passion.</p>
+                <a href="contact.html" class="btn">Nous contacter</a>
+            </div>
+        </section>
+
+        <section class="featured-properties">
+            <h2>Nos biens en vedette</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <img src="images/maison1.jpg" alt="Propriété 1">
+                    <div class="property-info">
+                        <h3>Villa moderne</h3>
+                        <p class="location">Paris, 16ème arrondissement</p>
+                        <p class="price">1 250 000 €</p>
+                        <p class="description">Superbe villa moderne de 250m² avec piscine et jardin paysagé.</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="images/appart1.jpg" alt="Propriété 2">
+                    <div class="property-info">
+                        <h3>Appartement de luxe</h3>
+                        <p class="location">Lyon, Presqu'île</p>
+                        <p class="price">850 000 €</p>
+                        <p class="description">Appartement haut de gamme de 120m² avec vue sur la Saône.</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="images/appart2.jpg" alt="Propriété 3">
+                    <div class="property-info">
+                        <h3>Immeuble d'habitation</h3>
+                        <p class="location">Bordeaux, Chartrons</p>
+                        <p class="price">1 750 000 €</p>
+                        <p class="description">Complexe d'appartements de 19 étages situé en plein centre de Bordeaux.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-item">
+                <h3>25+</h3>
+                <p>Ans d'expérience</p>
+            </div>
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Clients satisfaits</p>
+            </div>
+            <div class="stat-item">
+                <h3>120M€</h3>
+                <p>De transactions</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Témoignages</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"Borcelle a rendu la vente de notre propriété incroyablement simple. Leur expertise du marché local est inégalée."</p>
+                    <p class="author">- Sophie et Marc D.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Nous avons trouvé la maison parfaite grâce à Borcelle. Leur réseau de propriétés exclusives est impressionnant."</p>
+                    <p class="author">- Thomas L.</p>
+                </div>
+                <div class="testimonial active">
+                    <p>"Acquérir des propriétés pour mon entreprise n'a jamais été aussi facile"</p>
+                    <p class="author">- Jean Martin</p>
+                </div>
+                <div class="testimonial active">
+                    <p>"La fiabilité et la rapidité du service est exceptionnelle avec Borcelle"</p>
+                    <p class="author">- Karl Marx</p>
+                </div>
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo.png" alt="Borcelle Logo" class="footer-logo">
+                <p>Votre partenaire immobilier de confiance depuis 1998.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 12 Avenue des Champs, 75008 Paris</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@borcelle.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Borcelle. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
