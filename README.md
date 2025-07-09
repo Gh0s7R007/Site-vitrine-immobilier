@@ -1,4 +1,3 @@
-```markdown
 # Borcelle Immobilier - Site Vitrine
 
 ![Logo Borcelle](images/logo.png)
@@ -6,6 +5,7 @@
 Site vitrine responsive pour une agence immobilière avec catalogue interactif.
 
 ## 🚀 Fonctionnalités principales
+
 - **Catalogue intelligent** avec filtres dynamiques (type, prix, localisation)
 - **Fiches détaillées** en modale interactive
 - **Design moderne** : combinaison bleu & jaune sur fond blanc
@@ -13,6 +13,7 @@ Site vitrine responsive pour une agence immobilière avec catalogue interactif.
 - **Performant** : sans framework, uniquement HTML/CSS/JS
 
 ## 📂 Structure du projet
+
 ```
 .
 ├── index.html          # Page d'accueil
@@ -31,22 +32,26 @@ Site vitrine responsive pour une agence immobilière avec catalogue interactif.
 ```
 
 ## 🛠 Installation
+
 1. Téléchargez les fichiers :
-```bash
-git clone https://github.com/votre-utilisateur/borcelle-immobilier.git
-```
-2. Ouvrez `index.html` dans votre navigateur
+   ```bash
+   git clone https://github.com/Gh0s7R007/Site-vitrine-immobilier.git
+   ```
+2. Ouvrez `index.html` dans votre navigateur.
 
 ## 🔍 Fonctionnement du catalogue
+
 ### Filtres disponibles
-| Type | Budget | Localisation | Chambres |
-|------|--------|--------------|----------|
-| Maison | Min: 0€ | Paris | 1+ |
-| Appartement | Max: 5M€ | Lyon | 2+ |
-| Villa | | Marseille | 3+ |
-| Château | | Bordeaux | 4+ |
+
+| Type        | Budget      | Localisation | Chambres |
+|-------------|-------------|--------------|----------|
+| Maison      | Min: 0€     | Paris        | 1+       |
+| Appartement | Max: 5M€    | Lyon         | 2+       |
+| Villa       |             | Marseille    | 3+       |
+| Château     |             | Bordeaux     | 4+       |
 
 ### Ajouter un bien
+
 Modifiez `catalogue.js` :
 ```javascript
 {
@@ -61,43 +66,14 @@ Modifiez `catalogue.js` :
 ```
 
 ## 🌐 Compatibilité
+
 | Navigateur | Support |
 |------------|---------|
-| Chrome | ✅ |
-| Firefox | ✅ |
-| Safari | ✅ |
-| Edge | ✅ |
+| Chrome     | ✅      |
+| Firefox    | ✅      |
+| Safari     | ✅      |
+| Edge       | ✅      |
 
 ## 📝 Licence
+
 Projet sous licence MIT - voir [LICENSE](LICENSE).
-
----
-
-<details>
-<summary>📸 Captures d'écran (cliquer pour voir)</summary>
-
-![Desktop](screenshots/desktop.png)  
-*Version bureau*
-
-![Mobile](screenshots/mobile.png)  
-*Version mobile*
-</details>
-
-✉️ **Contact** : contact@borcelle.com  
-🌍 **Site** : [www.borcelle.com](https://www.borcelle.com)
-```
-
-### Bonnes pratiques intégrées :
-1. **Hiérarchie claire** avec titres et sous-titres
-2. **Tableaux** pour les données structurées
-3. **Blocs de code** pour les exemples techniques
-4. **Section pliante** pour les captures d'écran
-5. **Emojis** pour une meilleure lisibilité
-6. **Liens** vers les ressources externes
-
-Pour l'utiliser :
-1. Copiez ce contenu dans un fichier `README.md`
-2. Créez un dossier `screenshots/` avec vos captures
-3. Adaptez les liens et contacts selon vos besoins
-
-Ce format s'affichera parfaitement sur GitHub avec une mise en page organisée et professionnelle.
